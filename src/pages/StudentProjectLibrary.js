@@ -1,23 +1,24 @@
-
+// import React, { useState } from "react";
 import "../styling/SPL.css";
 import NavBar from "../kSComponents/NavBar.js";
 import ScrollUp from "../componentsLuis/ScrollUp.js";
-import Project01 from "../componentsLuis/projectsImages/Project01.png";
-import Project02 from "../componentsLuis/projectsImages/Project02.png";
-import Project03 from "../componentsLuis/projectsImages/Project03.png";
-import Project04 from "../componentsLuis/projectsImages/Project04.png";
-import Project05 from "../componentsLuis/projectsImages/Project05.png";
-import Project06 from "../componentsLuis/projectsImages/Project06.png";
-import Project07 from "../componentsLuis/projectsImages/Project07.png";
-import Project08 from "../componentsLuis/projectsImages/Project08.png";
-import Project09 from "../componentsLuis/projectsImages/Project09.png";
-import Project10 from "../componentsLuis/projectsImages/Project10.png";
-import Project11 from "../componentsLuis/projectsImages/Project11.png";
-import Project12 from "../componentsLuis/projectsImages/Project12.png";
-import Project13 from "../componentsLuis/projectsImages/Project13.png";
-import Project14 from "../componentsLuis/projectsImages/Project14.png";
-import Project15 from "../componentsLuis/projectsImages/Project15.png";
+// import Project01 from "../componentsLuis/projectsImages/Project01.png";
+// import Project02 from "../componentsLuis/projectsImages/Project02.png";
+// import Project03 from "../componentsLuis/projectsImages/Project03.png";
+// import Project04 from "../componentsLuis/projectsImages/Project04.png";
+// import Project05 from "../componentsLuis/projectsImages/Project05.png";
+// import Project06 from "../componentsLuis/projectsImages/Project06.png";
+// import Project07 from "../componentsLuis/projectsImages/Project07.png";
+// import Project08 from "../componentsLuis/projectsImages/Project08.png";
+// import Project09 from "../componentsLuis/projectsImages/Project09.png";
+// import Project10 from "../componentsLuis/projectsImages/Project10.png";
+// import Project11 from "../componentsLuis/projectsImages/Project11.png";
+// import Project12 from "../componentsLuis/projectsImages/Project12.png";
+// import Project13 from "../componentsLuis/projectsImages/Project13.png";
+// import Project14 from "../componentsLuis/projectsImages/Project14.png";
+// import Project15 from "../componentsLuis/projectsImages/Project15.png";
 import Footer from "../componentsLuis/Footer.jsx";
+import FilteringSPL from "../componentsLuis/FilteringSPL";
 
 export default function StudentProyectLibrary() {
   return (
@@ -114,7 +115,7 @@ export default function StudentProyectLibrary() {
             to help you search for specific projects
           </p>
 
-          <div className="button-container">
+          {/* <div className="button-container">
             <div className="buttons left">
               <button id="beginner">BEGINNER</button>
               <button id="intermediate">INTERMEDIATE</button>
@@ -126,9 +127,15 @@ export default function StudentProyectLibrary() {
               <button id="ten">10</button>
               <button id="all">All</button>
             </div>
-          </div>
+          </div> */}
 
-          <div className="image-container">
+          
+            
+              <FilteringSPL />
+            
+          
+
+          {/* <div className="image-container">
             <div className="image">
               <img src={Project01} alt="Introduction" />
               <h2>Introduction</h2>
@@ -204,7 +211,7 @@ export default function StudentProyectLibrary() {
               <h2>The Lion and the Mouse Part 2</h2>
               <p>INTERMEDIATE | Animation</p>
             </div>
-          </div>
+          </div> */}
           <ScrollUp />
         </section>
       </div>

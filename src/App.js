@@ -7,7 +7,7 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<StudentProyectLibrary />} />
+          <Route path="/" element={<StudentProyectLibrary />}/>
         </Routes>
       </BrowserRouter>
     </div>

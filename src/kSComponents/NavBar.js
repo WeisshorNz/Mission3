@@ -18,8 +18,7 @@ import Logo from "../kSComponents/src-assets/NavBar/LevelUpWorks-white.png";
 import Avatar from "../kSComponents/src-assets/NavBar/Avatar-white.png";
 import NZFlag from "../kSComponents/src-assets/NavBar/NZFlag.png";
 import MāoriFlag from "../kSComponents/src-assets/NavBar/MaoriFlag.png";
-import navBar from "../kSComponents/navBar.css"
-
+import "../kSComponents/navBar.css";
 
 const NavBar = () => {
   return (

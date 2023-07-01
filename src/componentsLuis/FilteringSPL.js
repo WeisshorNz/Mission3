@@ -55,7 +55,7 @@ export default function FilteringSPL() {
       name: "The bear and the monkey",
       image: <img src={Project05} alt="The bear and the monkey" />,
       category: "Game",
-      level: "Beginner",
+      level: "Advanced",
       subscription: "Premium",
     },
     {
@@ -141,7 +141,8 @@ export default function FilteringSPL() {
   ];
 
   const [quantityDisplayed,setQuantityDisplayed] = useState(pictureData.length)
-  const [selectedLevel, setSelectedLevel] = useState(" Beginner");
+  const [selectedLevel, setSelectedLevel] = useState("Beginner");
+  const [subscription,setSubscription] = useState("")
 
   const handleLevel = (level) => {
     setSelectedLevel(level);
@@ -154,7 +155,7 @@ export default function FilteringSPL() {
   const filteredlevel = pictureData.filter(
     (data) => data.level === selectedLevel
   );
-// console.log(filteredlevel);
+console.log(filteredlevel);
 
   const filteredQuantity = filteredlevel.slice(0,quantityDisplayed);
   console.log(filteredQuantity);
